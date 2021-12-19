@@ -4,24 +4,25 @@
     <link rel="stylesheet" type="text/css" href="admin.css">
 </head>
     <body>
-        <div class="btn">
+        <div class="form">
+        <form id="frm">
         <button id="b1" onclick="open.js">OPEN</button>
-        <button id="b2" onclick="close.js">CLOSE</button>
-        </div>
-        <label for="stocks">Select stock </label>
-
-        <select name="stock" id="stocks">
+        <button id="b1" onclick="close.js">CLOSE</button>
+        <label for="qt">Select stock </label>
+        <select name="stock" id="qt">
         <option value="DBS">DBS</option>
         <option value="saab"></option>
         <option value="mercedes"></option>
         <option value="audi"></option>
         </select><br>
-        From Date<input type="date" name="from">
-        To Date<input type="date" name="to">
-        <button onclick="orders.js">Show Orders</button><br>
-        Execution Quantity<input type="number" min=0 name="no">
-        Execution Price<input type="number" min=0 name="no">
-        <button onclick="execute.js">Execute Orders</button><br>
+        <b>
+        From Date<input id="qt" type="date" name="from"><br>
+        To Date<input id="qt" type="date" name="to"></b><br>
+        <button id="bt" onclick="orders.js">Show Orders</button><br>
+        <b>Execution Quantity<input id="qt" type="number" min=0 name="no"><br>
+        Execution Price<input id="qt" type="number" min=0 name="no"></b><br>
+        <button id="bt" onclick="execute.js">Execute Orders</button>
+    </form>
     </div>
     </body>
 </html>
