@@ -46,11 +46,11 @@
     </div><br><br>
     <div class="d-flex justify-content-center">
         <h3 class="m-1" >Price</h3>
-        <input type="number" id ="pprice" value="price"  min="0" step="1" />
+        <input type="text" id ="pprice" min="0" step="1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
     </div><br><br>
     <div class="d-flex justify-content-center"> 
         <h3 class="m-1">Quantity</h3>
-        <input type="number" min="0" step="1"/>
+        <input type="text" min="0" step="1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
     </div>
     <br><br>
     <div class="d-flex justify-content-center">
