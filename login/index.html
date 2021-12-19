@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="https://static.theprint.in/wp-content/uploads/2021/08/dbs-clinches-global-accolade-for-innovation-in-digital-banking.jpg">
+  <title>DBS-LOGIN/signUp </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<img src="data:image/png;base64,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">
+<div class="container " id="container">
+    <div class="form-container sign-up-container">
+        <form action="">
+            <h1>Other Way</h1>
+           <div class='contact-me'>
+            <nav class="social-container">
+               
+                <a href="" class="social"><i class="fab fa-telegram-plane"></i></a>
+                <a href="" class="social"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="" class="social"><i class="fab fa-google"></i></a>
+            </nav>
+</div>
+            <span>Or</span>
+            <input type="text" placeholder="Name ...">
+            <input type="email" placeholder="Email ...">
+            <input type="password" placeholder="Password ...">
+            <button class="btn-reg">Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="">
+            <h1> Other Way </h1>
+         <div class='contact-me'>
+            <nav class="social-container">
+               
+                <a href="" class="social"><i class="fab fa-telegram-plane"></i></a>
+                <a href="" class="social"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="" class="social"><i class="fab fa-google"></i></a>
+            </nav>
+</div>
+            <span>Or</span>
+            <input type="email" placeholder="Email ...">
+            <input type="password" placeholder="Password...">
+            <a href="#"> Forget Password?</a>
+            <button class="btn-reg">Let's go</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome to DBS</h1>
+                <p>To access all the features of the site, first log in to the site
+                </p>
+                <button class="ghost" id="signIn">Login</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Welcome to DBS</h1>
+                <p>If you are not a member of the site, become a member of the site in less than 1 minute</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
