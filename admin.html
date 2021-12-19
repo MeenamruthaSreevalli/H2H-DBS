@@ -4,11 +4,12 @@
     <link rel="stylesheet" type="text/css" href="admin.css">
 </head>
     <body>
+        <img src="dbs.jpg">
         <div class="form">
         <form id="frm">
         <button id="b1" onclick="open.js">OPEN</button>
         <button id="b1" onclick="close.js">CLOSE</button>
-        <label for="qt">Select stock </label>
+        <label for="qt"><u>Select stock </u></label>
         <select name="stock" id="qt">
         <option value="DBS">DBS</option>
         <option value="saab"></option>
@@ -16,10 +17,10 @@
         <option value="audi"></option>
         </select><br>
         <b>
-        From Date<input id="qt" type="date" name="from"><br>
-        To Date<input id="qt" type="date" name="to"></b><br>
+        <u>From Date</u> &nbsp;<input id="qt" type="date" name="from"><br>
+        <u>To Date</u>&nbsp;<input id="qt" type="date" name="to"></b><br><br>
         <button id="bt" onclick="orders.js">Show Orders</button><br>
-             <table style="padding: 2%;">
+        <table style="padding: 2%;">
             <tr class="hello"> 
               <th>S.no</th>
               <th>stock name</th>
@@ -60,8 +61,8 @@
                 <td>21 Fed 21</td>
             </tr>
           </table>
-        <b>Execution Quantity<input id="qt" type="number" min=0 name="no"><br>
-        Execution Price<input id="qt" type="number" min=0 name="no"></b><br>
+        <b><u>Execution Quantity</u>&nbsp;<input id="qt" type="number" min=0 name="no"><br>
+        <u>Execution Price</u>&nbsp;<input id="qt" type="number" min=0 name="no"></b><br><br>
         <button id="bt" onclick="execute.js">Execute Orders</button>
     </form>
     </div>
