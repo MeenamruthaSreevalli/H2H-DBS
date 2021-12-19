@@ -1,12 +1,16 @@
 body{
     margin: 10px;
-    padding: 40px;
+    padding: 20px 20px;
+    border:5px solid black;
     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-family: sans-serif;
     text-align:center;
+}
+img{
+    size: 100px;
 }
 .btn{
     margin:auto;
@@ -17,6 +21,7 @@ div.form
     display: block;
     text-align: center;
     padding:100px;
+    line-height:10px;
 }
 form
 {
@@ -44,17 +49,6 @@ label {
 }
 label:hover{
     border-bottom: purple;
-}
-label::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: width .3s;
-}
-label:hover::after{
-    width:90px;
 }
 #qt{
     background-color: rosybrown;
