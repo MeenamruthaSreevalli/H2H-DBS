@@ -19,6 +19,47 @@
         From Date<input id="qt" type="date" name="from"><br>
         To Date<input id="qt" type="date" name="to"></b><br>
         <button id="bt" onclick="orders.js">Show Orders</button><br>
+             <table style="padding: 2%;">
+            <tr class="hello"> 
+              <th>S.no</th>
+              <th>stock name</th>
+              <th>Order Qty</th>
+              <th>Order type</th>
+              <th>Executed Qty</th>
+              <th>Price</th>
+              <th>order status</th>
+              <th>order date</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DBS</td>
+                <td>50</td>
+                <td>limit</td>
+                <td>0</td>
+                <td>150</td>
+                <td>PLACED</td>
+                <td>21 Fed 21</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>DBS</td>
+                <td>50</td>
+                <td>market</td>
+                <td>0</td>
+                <td></td>
+                <td>PLACED</td>
+                <td>21 Fed 21</td>
+            </tr><tr>
+                <td>3</td>
+                <td>DBS</td>
+                <td>50</td>
+                <td>limit</td>
+                <td>0</td>
+                <td>140</td>
+                <td>PLACED</td>
+                <td>21 Fed 21</td>
+            </tr>
+          </table>
         <b>Execution Quantity<input id="qt" type="number" min=0 name="no"><br>
         Execution Price<input id="qt" type="number" min=0 name="no"></b><br>
         <button id="bt" onclick="execute.js">Execute Orders</button>
