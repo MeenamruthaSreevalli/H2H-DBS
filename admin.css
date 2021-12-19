@@ -1,13 +1,70 @@
 body{
-    margin: 0;
-    padding: 10px;
+    margin: 10px;
+    padding: 40px;
     background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-family: sans-serif;
+    text-align:center;
 }
 .btn{
     margin:auto;
     max-width: 500px;
+}
+div.form
+{
+    display: block;
+    text-align: center;
+    padding:100px;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding:20px;
+}
+#b1{
+    color:white;
+    background-color: purple;
+    border-radius: 5px;
+}
+#b1:hover{
+    background-color:blue;
+}
+label {
+    cursor: pointer;
+    color: black;
+    display: block;
+    padding: 10px;
+    margin: 3px;
+    border:2px;
+}
+label:hover{
+    border-bottom: purple;
+}
+label::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+label:hover::after{
+    width:90px;
+}
+#qt{
+    background-color: rosybrown;
+    border-radius: 5px;
+}
+#bt{
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+}
+#bt:hover{
+    background-color: purple;
 }
